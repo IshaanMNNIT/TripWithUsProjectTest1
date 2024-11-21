@@ -213,7 +213,9 @@ let hotels = [
     country: 'Australia',
   },
 ];
-
+app.get('/Load Hotels',(req,res)=>{
+  res.json(hotels);
+});
 // Endpoint 1 : Get the hotels sorted by pricing
 function lowToHigh(hotel1, hotel2) {
   return hotel1.price - hotel2.price;
